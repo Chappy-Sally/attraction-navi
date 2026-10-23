@@ -103,8 +103,8 @@ const resultTypes = {
     order: ["深呼吸で安心する", "今ある安心を1つ見つける", "本当はどうしたい？と聞く"],
     message: "願いのために無理に気分を上げなくても大丈夫。まず安心できるところへ戻ってから、次を選んでみよう😊",
     apps: [
-      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "不安や思い込みに気づいて、やさしく安心に戻りたい時に。", url: "https://chappy-sally.github.io/chappy-sally-anshin-navi/" },
-      { emoji: "🌈", name: "未来の私に会いに行く", desc: "安心しながら、これからの私や望む暮らしを描きたい時に。", url: "https://chappy-sally.github.io/chappy-sally-mirai/" }
+      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "不安や思い込みに気づいて、やさしく安心に戻りたい時に。", url: "https://ChappySally.base.shop/items/151505509" },
+      { emoji: "✨", name: "AI×タロット＆思い込みカード｜私にもどる総合ワークアプリ", desc: "思い込みも役割も両方見ながら、今の自分に戻りたい時に。", url: "https://ChappySally.base.shop/items/151505728" }
     ]
   },
   clarify: {
@@ -118,8 +118,8 @@ const resultTypes = {
     order: ["思っていることを全部書く", "事実と解釈を分ける", "今の私の願いを1つ決める"],
     message: "きれいに書かなくて大丈夫。書きながら願いが変わっても大丈夫。今のあなたの言葉がいちばん大切だよ😊",
     apps: [
-      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "頭の中を整理しながら、本音や思い込みに気づきたい時に。", url: "https://chappy-sally.github.io/chappy-sally-anshin-navi/" },
-      { emoji: "🌈", name: "未来の私に会いに行く", desc: "『本当はどうしたい？』から未来の暮らしを言葉にしたい時に。", url: "https://chappy-sally.github.io/chappy-sally-mirai/" }
+      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "頭の中を整理しながら、本音や思い込みに気づきたい時に。", url: "https://ChappySally.base.shop/items/151505509" },
+      { emoji: "✨", name: "AI×タロット＆思い込みカード｜私にもどる総合ワークアプリ", desc: "思い込みと役割の両方をまとめて見ていきたい時に。", url: "https://ChappySally.base.shop/items/151505728" }
     ]
   },
   imagine: {
@@ -133,8 +133,8 @@ const resultTypes = {
     order: ["叶った瞬間を思い浮かべる", "1時間後の自分を見る", "今やりたいことを1つ選ぶ"],
     message: "上手に想像しなくて大丈夫。『うふふっ🤭』となるくらいの楽しい妄想から始めよう🌈",
     apps: [
-      { emoji: "🌈", name: "未来の私に会いに行く", desc: "叶った1時間後の私へのワープや、未来の私を楽しく描きたい時に。", url: "https://chappy-sally.github.io/chappy-sally-mirai/" },
-      { emoji: "🔮", name: "AI×タロット｜役割手放しワークアプリ", desc: "未来を楽しみながら、今の自分に必要な視点も受け取りたい時に。", url: "https://chappy-sally.github.io/chappy-sally-tarot-navi/" }
+      { emoji: "✨", name: "AI×タロット＆思い込みカード｜私にもどる総合ワークアプリ", desc: "願い・思い込み・役割をまとめて見ながら、自分らしい選び方に戻りたい時に。", url: "https://ChappySally.base.shop/items/151505728" },
+      { emoji: "🔮", name: "AI×タロット｜役割手放しワークアプリ", desc: "今の自分に必要な視点を受け取りながら、背負いすぎを手放したい時に。", url: "https://ChappySally.base.shop/items/151505292" }
     ]
   },
   release: {
@@ -148,8 +148,8 @@ const resultTypes = {
     order: ["今背負っているものに気づく", "私の役割だけ残す", "あとは託して今に戻る"],
     message: "あなたの役割は、全部をコントロールすることじゃないよ。できることを選んだら、あとは握りしめすぎなくて大丈夫😊",
     apps: [
-      { emoji: "🔮", name: "AI×タロット｜役割手放しワークアプリ", desc: "『これって誰の役割？』から、背負いすぎを手放したい時に。", url: "https://chappy-sally.github.io/chappy-sally-tarot-navi/" },
-      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "『こうしなきゃ』の奥にある思い込みも一緒に見てみたい時に。", url: "https://chappy-sally.github.io/chappy-sally-anshin-navi/" }
+      { emoji: "🔮", name: "AI×タロット｜役割手放しワークアプリ", desc: "『これって誰の役割？』から、背負いすぎを手放したい時に。", url: "https://ChappySally.base.shop/items/151505292" },
+      { emoji: "✨", name: "AI×タロット＆思い込みカード｜私にもどる総合ワークアプリ", desc: "役割だけでなく、思い込みも一緒に整えたい時に。", url: "https://ChappySally.base.shop/items/151505728" }
     ]
   }
 };
