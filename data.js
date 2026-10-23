@@ -101,7 +101,11 @@ const resultTypes = {
       { emoji: "📝", name: "やさしいジャーナリング", desc: "不安を責めずに書き出して、今の気持ちを整理する。" }
     ],
     order: ["深呼吸で安心する", "今ある安心を1つ見つける", "本当はどうしたい？と聞く"],
-    message: "願いのために無理に気分を上げなくても大丈夫。まず安心できるところへ戻ってから、次を選んでみよう😊"
+    message: "願いのために無理に気分を上げなくても大丈夫。まず安心できるところへ戻ってから、次を選んでみよう😊",
+    apps: [
+      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "不安や思い込みに気づいて、やさしく安心に戻りたい時に。", url: "https://chappy-sally.github.io/chappy-sally-anshin-navi/" },
+      { emoji: "🌈", name: "未来の私に会いに行く", desc: "安心しながら、これからの私や望む暮らしを描きたい時に。", url: "https://chappy-sally.github.io/chappy-sally-mirai/" }
+    ]
   },
   clarify: {
     title: "言葉にすると願いが見えてくるタイプ 📝",
@@ -112,7 +116,11 @@ const resultTypes = {
       { emoji: "💗", name: "本当はどうしたい？", desc: "正解探しより、自分の望みをひとつずつ拾っていく。" }
     ],
     order: ["思っていることを全部書く", "事実と解釈を分ける", "今の私の願いを1つ決める"],
-    message: "きれいに書かなくて大丈夫。書きながら願いが変わっても大丈夫。今のあなたの言葉がいちばん大切だよ😊"
+    message: "きれいに書かなくて大丈夫。書きながら願いが変わっても大丈夫。今のあなたの言葉がいちばん大切だよ😊",
+    apps: [
+      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "頭の中を整理しながら、本音や思い込みに気づきたい時に。", url: "https://chappy-sally.github.io/chappy-sally-anshin-navi/" },
+      { emoji: "🌈", name: "未来の私に会いに行く", desc: "『本当はどうしたい？』から未来の暮らしを言葉にしたい時に。", url: "https://chappy-sally.github.io/chappy-sally-mirai/" }
+    ]
   },
   imagine: {
     title: "未来を感じると動き出すタイプ 🌈",
@@ -123,7 +131,11 @@ const resultTypes = {
       { emoji: "🖼️", name: "ビジュアルイメージ", desc: "写真や景色を使って、望む暮らしの感覚を味わう。" }
     ],
     order: ["叶った瞬間を思い浮かべる", "1時間後の自分を見る", "今やりたいことを1つ選ぶ"],
-    message: "上手に想像しなくて大丈夫。『うふふっ🤭』となるくらいの楽しい妄想から始めよう🌈"
+    message: "上手に想像しなくて大丈夫。『うふふっ🤭』となるくらいの楽しい妄想から始めよう🌈",
+    apps: [
+      { emoji: "🌈", name: "未来の私に会いに行く", desc: "叶った1時間後の私へのワープや、未来の私を楽しく描きたい時に。", url: "https://chappy-sally.github.io/chappy-sally-mirai/" },
+      { emoji: "🔮", name: "AI×タロット｜役割手放しワークアプリ", desc: "未来を楽しみながら、今の自分に必要な視点も受け取りたい時に。", url: "https://chappy-sally.github.io/chappy-sally-tarot-navi/" }
+    ]
   },
   release: {
     title: "役割を手放すと軽くなるタイプ 🪽",
@@ -134,6 +146,10 @@ const resultTypes = {
       { emoji: "🔋", name: "省エネモード", desc: "反論しない、背負わない、納得させない。必要以上に頑張らない。" }
     ],
     order: ["今背負っているものに気づく", "私の役割だけ残す", "あとは託して今に戻る"],
-    message: "あなたの役割は、全部をコントロールすることじゃないよ。できることを選んだら、あとは握りしめすぎなくて大丈夫😊"
+    message: "あなたの役割は、全部をコントロールすることじゃないよ。できることを選んだら、あとは握りしめすぎなくて大丈夫😊",
+    apps: [
+      { emoji: "🔮", name: "AI×タロット｜役割手放しワークアプリ", desc: "『これって誰の役割？』から、背負いすぎを手放したい時に。", url: "https://chappy-sally.github.io/chappy-sally-tarot-navi/" },
+      { emoji: "🌿", name: "AI×思い込みカード｜思い込み解放ワークアプリ", desc: "『こうしなきゃ』の奥にある思い込みも一緒に見てみたい時に。", url: "https://chappy-sally.github.io/chappy-sally-anshin-navi/" }
+    ]
   }
 };
