@@ -7,6 +7,9 @@ const screens = {
 const startBtn = document.getElementById("startBtn");
 const backBtn = document.getElementById("backBtn");
 const restartBtn = document.getElementById("restartBtn");
+const appsBtn = document.getElementById("appsBtn");
+const appsBox = document.getElementById("appsBox");
+const appRecommendations = document.getElementById("appRecommendations");
 const questionText = document.getElementById("questionText");
 const optionsEl = document.getElementById("options");
 const questionCount = document.getElementById("questionCount");
@@ -15,6 +18,7 @@ const progressBar = document.getElementById("progressBar");
 
 let currentQuestion = 0;
 let answers = [];
+let currentResult = null;
 
 function showScreen(name) {
   Object.values(screens).forEach(screen => screen.classList.remove("active", "fade-in"));
@@ -25,6 +29,9 @@ function showScreen(name) {
 function startQuiz() {
   currentQuestion = 0;
   answers = [];
+  currentResult = null;
+  appsBox.hidden = true;
+  appRecommendations.innerHTML = "";
   showScreen("quiz");
   renderQuestion();
 }
@@ -86,6 +93,9 @@ function showResult() {
   const scores = calculateScores();
   const topType = getTopType(scores);
   const result = resultTypes[topType];
+  currentResult = result;
+  appsBox.hidden = true;
+  appRecommendations.innerHTML = "";
 
   document.getElementById("resultTitle").textContent = result.title;
   document.getElementById("resultLead").textContent = result.lead;
@@ -114,3 +124,23 @@ function showResult() {
 startBtn.addEventListener("click", startQuiz);
 backBtn.addEventListener("click", goBack);
 restartBtn.addEventListener("click", startQuiz);
+
+function showRecommendedApps() {
+  if (!currentResult || !currentResult.apps) return;
+
+  appRecommendations.innerHTML = currentResult.apps.map(app => `
+    <a class="app-card" href="${app.url}" target="_blank" rel="noopener noreferrer">
+      <span class="app-card-emoji">${app.emoji}</span>
+      <span class="app-card-text">
+        <strong>${app.name}</strong>
+        <small>${app.desc}</small>
+      </span>
+      <span class="app-card-arrow">›</span>
+    </a>
+  `).join("");
+
+  appsBox.hidden = false;
+  appsBox.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+appsBtn.addEventListener("click", showRecommendedApps);
