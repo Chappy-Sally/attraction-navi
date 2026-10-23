@@ -128,16 +128,30 @@ restartBtn.addEventListener("click", startQuiz);
 function showRecommendedApps() {
   if (!currentResult || !currentResult.apps) return;
 
-  appRecommendations.innerHTML = currentResult.apps.map(app => `
-    <a class="app-card" href="${app.url}" target="_blank" rel="noopener noreferrer">
-      <span class="app-card-emoji">${app.emoji}</span>
+  const [primaryApp, secondaryApp] = currentResult.apps;
+
+  appRecommendations.innerHTML = `
+    <div class="app-rank-label primary-label">✨ いちばんおすすめ</div>
+    <a class="app-card primary-app-card" href="${primaryApp.url}" target="_blank" rel="noopener noreferrer">
+      <span class="app-card-emoji">${primaryApp.emoji}</span>
       <span class="app-card-text">
-        <strong>${app.name}</strong>
-        <small>${app.desc}</small>
+        <strong>${primaryApp.name}</strong>
+        <small>${primaryApp.desc}</small>
       </span>
       <span class="app-card-arrow">›</span>
     </a>
-  `).join("");
+    ${secondaryApp ? `
+      <div class="app-rank-label secondary-label">こちらもおすすめ</div>
+      <a class="app-card secondary-app-card" href="${secondaryApp.url}" target="_blank" rel="noopener noreferrer">
+        <span class="app-card-emoji">${secondaryApp.emoji}</span>
+        <span class="app-card-text">
+          <strong>${secondaryApp.name}</strong>
+          <small>${secondaryApp.desc}</small>
+        </span>
+        <span class="app-card-arrow">›</span>
+      </a>
+    ` : ""}
+  `;
 
   appsBox.hidden = false;
   appsBox.scrollIntoView({ behavior: "smooth", block: "start" });
