@@ -34,7 +34,7 @@ function renderQuestion() {
   const total = quizData.length;
   const percent = Math.round(((currentQuestion + 1) / total) * 100);
 
-  questionText.textContent = item.question;
+  questionText.innerHTML = item.question.split(",").map(line => `<span class="question-line">${line}</span>`).join("");
   questionCount.textContent = `${currentQuestion + 1} / ${total}`;
   progressLabel.textContent = `${percent}%`;
   progressBar.style.width = `${percent}%`;
