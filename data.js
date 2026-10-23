@@ -1,6 +1,6 @@
 const quizData = [
   {
-    question: "願いについて考えた時、いちばん起こりやすいのは？",
+    question: "願いについて考えた時,いちばん起こりやすいのは？",
     options: [
       { text: "考えすぎて頭がいっぱいになる", icon: "🌿", type: "calm" },
       { text: "そもそも何を願いたいのか分からなくなる", icon: "📝", type: "clarify" },
@@ -9,7 +9,7 @@ const quizData = [
     ]
   },
   {
-    question: "モヤモヤした時、いちばん助かりそうなのは？",
+    question: "モヤモヤした時,いちばん助かりそうなのは？",
     options: [
       { text: "まず落ち着いてホッとしたい", icon: "🍵", type: "calm" },
       { text: "書き出して頭の中を整理したい", icon: "✍️", type: "clarify" },
@@ -18,7 +18,7 @@ const quizData = [
     ]
   },
   {
-    question: "「引き寄せ」で楽しそうと思うのは？",
+    question: "「引き寄せ」で,楽しそうと思うのは？",
     options: [
       { text: "深呼吸や安心できる習慣", icon: "🌿", type: "calm" },
       { text: "ノートに願いや気持ちを書くこと", icon: "📔", type: "clarify" },
@@ -27,7 +27,7 @@ const quizData = [
     ]
   },
   {
-    question: "願いがなかなか動かないと感じた時は？",
+    question: "願いが動かないと感じた時,あなたはどうなりやすい？",
     options: [
       { text: "不安になって何度も確認したくなる", icon: "😳", type: "calm" },
       { text: "願い方が間違っているのか考え込む", icon: "🤔", type: "clarify" },
@@ -36,7 +36,7 @@ const quizData = [
     ]
   },
   {
-    question: "どんな言葉がいちばんしっくりくる？",
+    question: "どんな言葉が,いちばんしっくりくる？",
     options: [
       { text: "大丈夫。まず安心しよう", icon: "🌱", type: "calm" },
       { text: "私は本当はどうしたい？", icon: "💗", type: "clarify" },
@@ -45,7 +45,7 @@ const quizData = [
     ]
   },
   {
-    question: "何か始める時に止まりやすい理由は？",
+    question: "何か始める時,止まりやすい理由は？",
     options: [
       { text: "不安が大きくなって動けなくなる", icon: "🌧️", type: "calm" },
       { text: "選択肢が多くて決められない", icon: "🌀", type: "clarify" },
@@ -54,7 +54,7 @@ const quizData = [
     ]
   },
   {
-    question: "毎日続けるなら、どれがラクそう？",
+    question: "毎日続けるなら,どれがラクそう？",
     options: [
       { text: "1分だけ呼吸を整える", icon: "🌬️", type: "calm" },
       { text: "ひとこと願いを書く", icon: "🖊️", type: "clarify" },
@@ -63,7 +63,7 @@ const quizData = [
     ]
   },
   {
-    question: "願いを叶えたい時、つい増えやすいのは？",
+    question: "願いを叶えたい時,つい増えやすいのは？",
     options: [
       { text: "焦りや心配", icon: "💦", type: "calm" },
       { text: "頭の中の言葉や分析", icon: "💭", type: "clarify" },
@@ -72,7 +72,7 @@ const quizData = [
     ]
   },
   {
-    question: "今ほしい感覚にいちばん近いのは？",
+    question: "今ほしい感覚に,いちばん近いのは？",
     options: [
       { text: "ホッとする安心", icon: "🍀", type: "calm" },
       { text: "自分の本音が分かるスッキリ感", icon: "🔎", type: "clarify" },
@@ -81,7 +81,7 @@ const quizData = [
     ]
   },
   {
-    question: "最後に。今のあなたがやってみたいのは？",
+    question: "最後に,今のあなたがやってみたいのは？",
     options: [
       { text: "まず心と体を落ち着かせる", icon: "🌿", type: "calm" },
       { text: "願いや気持ちを言葉にしてみる", icon: "📝", type: "clarify" },
