@@ -1,1 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff7fb">
+  <meta name="description" content="今のあなたにぴったりの引き寄せ方法を見つける無料診断">
+  <title>チャッピー＆サリーの わたし専用 引き寄せコースナビ🌈</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section id="coverScreen" class="screen active cover-screen">
+      <div class="cover-card">
+        <img src="images/hikiyose_hyoushi.png" alt="チャッピー＆サリーの わたし専用 引き寄せコースナビ" class="cover-image">
+        <div class="cover-copy">
+          <span class="free-badge">🌿 無料診断</span>
+          <h1>今のわたしにぴったりの<br>引き寄せ方法を見つけよう🌈</h1>
+          <p>いくつかの質問にポチポチ答えるだけ。<br>あなたに合いそうな方法を3つご案内します😊</p>
+          <button id="startBtn" class="primary-btn">診断をはじめる ✨</button>
+          <p class="note">正解・不正解はありません。今の気分で選んでね。</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="quizScreen" class="screen">
+      <div class="quiz-card">
+        <div class="progress-wrap">
+          <div class="progress-meta">
+            <span id="questionCount">1 / 10</span>
+            <span id="progressLabel">10%</span>
+          </div>
+          <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        </div>
+        <div class="mascot-line">🐶 チャッピー＆サリーと一緒に見つけよう 🐶</div>
+        <h2 id="questionText"></h2>
+        <div id="options" class="options"></div>
+        <button id="backBtn" class="text-btn" type="button">← ひとつ戻る</button>
+      </div>
+    </section>
+
+    <section id="resultScreen" class="screen">
+      <div class="result-card">
+        <div class="result-kicker">✨ 診断結果 ✨</div>
+        <h2 id="resultTitle"></h2>
+        <p id="resultLead" class="result-lead"></p>
+
+        <div class="recommend-box">
+          <h3>あなたにおすすめの引き寄せ方法</h3>
+          <div id="recommendations" class="recommendations"></div>
+        </div>
+
+        <div class="order-box">
+          <h3>💡 おすすめの使い方</h3>
+          <div id="resultOrder" class="result-order"></div>
+        </div>
+
+        <div class="message-box">
+          <div class="paw">🐾</div>
+          <p id="resultMessage"></p>
+        </div>
+
+        <div class="reminder">
+          <strong>大切なのは「全部やること」じゃないよ😊</strong>
+          <p>今のあなたが「これならやってみたい」と思うものを、できる時にできる範囲で。しっくりこなければ変えて大丈夫🌿</p>
+        </div>
+
+        <button id="restartBtn" class="secondary-btn">↻ もう一度診断する</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
