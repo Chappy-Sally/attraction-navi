@@ -15,3 +15,10 @@
 .app-card-text small{display:block;color:#77616d;line-height:1.55}
 .app-card-arrow{font-size:1.7rem;color:#d987a4;text-align:right}
 @media(max-width:650px){.apps-box{padding:18px 14px}.app-card{grid-template-columns:40px 1fr 20px;padding:14px 12px}.app-card-text strong{font-size:.94rem}}
+
+.app-rank-label{font-weight:800;text-align:left;margin:6px 4px 8px}
+.primary-label{color:#d56b91}
+.secondary-label{color:#7d6b76;margin-top:16px;font-size:.92rem}
+.primary-app-card{border:2px solid #f2a8c2;background:linear-gradient(135deg,#fff7fb,#fffaf1);box-shadow:0 8px 20px rgba(220,116,153,.14)}
+.primary-app-card .app-card-text strong{font-size:1.05rem;color:#6a4054}
+.secondary-app-card{opacity:.93;background:#fff}
