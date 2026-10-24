@@ -1,10 +1,12 @@
 const screens = {
   cover: document.getElementById("coverScreen"),
+  memory: document.getElementById("memoryScreen"),
   quiz: document.getElementById("quizScreen"),
   result: document.getElementById("resultScreen")
 };
 
 const startBtn = document.getElementById("startBtn");
+const memoryNextBtn = document.getElementById("memoryNextBtn");
 const backBtn = document.getElementById("backBtn");
 const restartBtn = document.getElementById("restartBtn");
 const appsBtn = document.getElementById("appsBtn");
@@ -24,6 +26,10 @@ function showScreen(name) {
   Object.values(screens).forEach(screen => screen.classList.remove("active", "fade-in"));
   screens[name].classList.add("active", "fade-in");
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function showMemoryWork() {
+  showScreen("memory");
 }
 
 function startQuiz() {
@@ -121,7 +127,8 @@ function showResult() {
   showScreen("result");
 }
 
-startBtn.addEventListener("click", startQuiz);
+startBtn.addEventListener("click", showMemoryWork);
+memoryNextBtn.addEventListener("click", startQuiz);
 backBtn.addEventListener("click", goBack);
 restartBtn.addEventListener("click", startQuiz);
 
