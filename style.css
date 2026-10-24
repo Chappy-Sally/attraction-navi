@@ -22,3 +22,7 @@
 .primary-app-card{border:2px solid #f2a8c2;background:linear-gradient(135deg,#fff7fb,#fffaf1);box-shadow:0 8px 20px rgba(220,116,153,.14)}
 .primary-app-card .app-card-text strong{font-size:1.05rem;color:#6a4054}
 .secondary-app-card{opacity:.93;background:#fff}
+
+.future-note{max-width:560px;margin:16px auto 18px;padding:15px 16px;border-radius:18px;background:linear-gradient(135deg,#fff5fa,#f3fbff);border:1px solid #eadbe6}
+.future-note strong{display:block;color:#6f4057;font-size:1rem;margin-bottom:5px}
+.cover-copy .future-note p{margin:0;line-height:1.7;color:#7f6b76;font-size:.92rem}
